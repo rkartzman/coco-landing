@@ -40,6 +40,9 @@ injectGlobal`
     text-decoration: none;
     color: ${theme.colors.black};
   }
+  img {
+    max-width: 100%;
+  }
   .icon {
     width: 1em;
     height: 1em;

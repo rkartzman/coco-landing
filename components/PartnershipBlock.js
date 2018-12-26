@@ -49,8 +49,11 @@ const Right = styled.div`
     margin-top: 0px;
   }
   img {
-    max-width: 360px;
-    margin: 0 auto;
+    @media(min-width: 768px) {
+      max-width: 360px;
+      margin: 0 auto;
+
+    }
   }
 `;
 class PartnershipBlock extends React.Component {

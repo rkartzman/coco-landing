@@ -12,19 +12,26 @@ const BackgroundImage = styled.div`
   flex-direction: column;
 `;
 const Inner = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: block;
   width: 100%;
   justify-content: center;
   color: ${props => props.theme.colors.white};
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 
 const StatItem = styled.div`
-  flex: 1 0 33.33%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media(min-width: 768px) {
+    flex: 1 0 33.33%;
+
+  }
   svg {
     width: 60px;
     height: 60px;
@@ -33,6 +40,12 @@ const StatItem = styled.div`
 
 const H1 = styled.h1`
   color: ${props => props.theme.colors.white};
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 20px;
+  @media(min-width: 768px) {
+
+  }
 `;
 const Subtext = styled.p`
   font-size: 1.6rem;

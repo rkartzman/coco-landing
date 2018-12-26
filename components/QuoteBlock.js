@@ -15,7 +15,10 @@ const QuoteWrapper = styled.div`
 const Letters = styled.h6`
   font-size: 32px;
   color: #ffa949;
-  transform: scale(17) translate3d(38%,0,0);
+  transform: scale(17) translate3d(17%, 0, 0);
+  @media (min-width: 768px) {
+    transform: scale(17) translate3d(38%, 0, 0);
+  }
 `;
 const Quote = styled.h3`
   font-size: 3.2rem;
@@ -25,9 +28,11 @@ const Quote = styled.h3`
   margin: 0;
   z-index: 1;
   text-align: center;
+  position: absolute;
   @media(min-width: 768px) {
     max-width: 60%;
     margin: 0 auto;
+    position: relative;
 
   }
 `;

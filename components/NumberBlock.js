@@ -7,7 +7,7 @@ const BackgroundImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
-  padding: 80px;
+  padding: 40px;
   @media(min-width: 768px) {
     padding: 150px;
     display: flex;
@@ -23,7 +23,7 @@ const Number = styled.div`
   flex-direction: column;
   padding: 70px 70px 70px 70px;
   border-radius: 6px;
-
+  background-size: cover;
   justify-content: center;
   align-items: center;
   @media (min-width: 768px) {

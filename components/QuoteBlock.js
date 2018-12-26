@@ -29,6 +29,8 @@ const Quote = styled.h3`
   z-index: 1;
   text-align: center;
   position: absolute;
+  font-weight: bold;
+  padding: 0 20px;
   @media(min-width: 768px) {
     max-width: 60%;
     margin: 0 auto;

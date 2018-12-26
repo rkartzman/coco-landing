@@ -89,11 +89,11 @@ class PartnershipBlock extends React.Component {
               straight to their fans. Get in touch with us to help you run
               your own Text Campaigns.
             </p>
-            {this.state.isMobileDevice ? <Link href="sms:12014507319">
-                <Button>Get in Touch</Button>
-          </Link> : <Link href="mailto:remykartzman@gmail.com">
-                <Button>Get in blah</Button>
-              </Link>}
+            {this.state.isMobileDevice ? 
+                <Button href="sms:12014507319">Get in Touch</Button>
+           : 
+                <Button href="mailto:remykartzman@gmail.com">Get in blah</Button>
+              }
           </Left>
           <Right>
             <img src="../static/images/Phone-3.png" />

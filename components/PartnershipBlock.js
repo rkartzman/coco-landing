@@ -82,18 +82,18 @@ class PartnershipBlock extends React.Component {
     return <BackgroundImage>
         <Inner>
           <Left>
-            <label>What is Coco?</label>
+          <h1>Coco - Where artists text their fans.</h1>
+            
             <p>
-              Coco & Open Message have partnered up to give musicians &
-              creators the ability to send beautifully designed messages,
-              straight to their fans. Get in touch with us to help you run
-              your own Text Campaigns.
+              We've partnered with Open Message to upgrade texting for
+              creators. Go from black & white, to colored HTML images that
+              invoke emotion & grab attention.
             </p>
-            {this.state.isMobileDevice ? 
-                <Button href="sms:12014507319">Get in Touch</Button>
-           : 
-                <Button href="mailto:remykartzman@gmail.com">Get in blah</Button>
-              }
+            {this.state.isMobileDevice ? <Button href="sms:12014507319">
+                Get in Touch
+              </Button> : <Button href="mailto:remykartzman@gmail.com">
+                Get in Touch
+              </Button>}
           </Left>
           <Right>
             <img src="../static/images/Phone-3.png" />

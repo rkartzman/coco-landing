@@ -40,9 +40,11 @@ const Quote = styled.h3`
 `;
 const QuoteBlock = () => (
   <QuoteWrapper>
-    <Letters>65%</Letters>
+    <Letters>98%</Letters>
     <Quote>
-      Text messages have a open rate that is 65% higher compared to emails.
+      The most important piece of data is a phone number. Cut through the noise
+      and send something that's eye catching, to the inbox that's never ignored.
+      Open Message open rate: 98%
     </Quote>
   </QuoteWrapper>
 );

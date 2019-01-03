@@ -70,17 +70,16 @@ class NumberBlock extends React.Component {
   render() {
     return <BackgroundImage>
         <Number>
-            <PrimaryLabel>Our Number</PrimaryLabel>
-            <h1>201/</h1>
-            <h1>450/</h1>
-            <h1>7319</h1>
-
+          <PrimaryLabel>Our Number</PrimaryLabel>
+          <h1>201/</h1>
+          <h1>450/</h1>
+          <h1>7319</h1>
         </Number>
         <Copy>
           <label>Song of the week</label>
           <p>
-            We're starting a texting list! Text us to see an example of our
-            song of the week.{" "}
+            Text us, cause we're starting a weekly playlist and it'll be
+            cool we promise
           </p>
         </Copy>
       </BackgroundImage>;

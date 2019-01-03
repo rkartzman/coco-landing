@@ -54,25 +54,25 @@ const Subtext = styled.p`
 class StatBlock extends Component {
   render() {
     return <BackgroundImage>
-          <H1>The power of texting just got stronger. </H1>
+          <H1>Send beautifully crafted messages to your community </H1>
         <Inner>
           <StatItem>
             <svg className="icon icon-megaphone">
               <use xlinkHref="#icon-megaphone" />
             </svg>
-            <Subtext>Launch beautiful text campaigns</Subtext>
+            <Subtext>Announce your music releases</Subtext>
           </StatItem>
           <StatItem>
             <svg className="icon icon-chat">
               <use xlinkHref="#icon-chat" />
             </svg>
-            <Subtext>Text directly with your fans</Subtext>
+            <Subtext>Engage with your fans</Subtext>
           </StatItem>
           <StatItem>
             <svg className="icon icon-transaction">
               <use xlinkHref="#icon-transaction" />
             </svg>
-            <Subtext>Earn money through SMS transactions</Subtext>
+            <Subtext>Sell merch & tickets</Subtext>
           </StatItem>
         </Inner>
       </BackgroundImage>;

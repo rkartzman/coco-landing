@@ -43,8 +43,7 @@ const QuoteBlock = () => (
     <Letters>98%</Letters>
     <Quote>
       The most important piece of data is a phone number. Cut through the noise
-      and send something that's eye catching, to the inbox that's never ignored.
-      Open Message open rate: 98%
+      and send a message with color, to the inbox that's never ignored.
     </Quote>
   </QuoteWrapper>
 );

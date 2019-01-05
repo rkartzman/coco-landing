@@ -28,12 +28,23 @@ const Button = styled.a`
   align-self: flex-start;
   font-weight: bold;
   cursor: pointer;
+  letter-spacing: 1px;
 `;
 const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  span {
+    font-size: 1.6rem;
+  }
   @media(min-width: 768px) {
     padding-left: 120px;
     flex: 1 0 50%;
@@ -82,13 +93,13 @@ class PartnershipBlock extends React.Component {
     return <BackgroundImage>
         <Inner>
           <Left>
-          <h1>Coco - Where artists text their fans.</h1>
+            <span>Coco - Where artists text their fans.</span>
             
-            <p>
+            <h2>
               We've partnered with Open Message to upgrade texting for
               creators. Go from black & white, to colored HTML images that
               invoke emotion & grab attention.
-            </p>
+            </h2>
             {this.state.isMobileDevice ? <Button href="sms:12014507319">
                 Get in Touch
               </Button> : <Button href="mailto:remykartzman@gmail.com">

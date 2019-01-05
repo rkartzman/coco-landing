@@ -55,6 +55,7 @@ const Copy = styled.div`
     color: ${props => props.theme.colors.white};
     font-size:  3.2rem;
     line-height: 4.2rem;
+    margin: 0;
   }
 `;
 

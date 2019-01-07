@@ -34,7 +34,9 @@ injectGlobal`
     margin: 0;
     padding: 0;
     font-family: 'Gotham';
+    -webkit-font-smoothing: antialiased;
   }
+
   
   a {
     text-decoration: none;
@@ -48,8 +50,13 @@ injectGlobal`
     height: 1em;
   }
   .icon-coco {
-    width: 16rem;
-    height: 4rem;
+    width: 10rem;
+    height: 2.6rem;
+    @media(min-width: 769px) {
+      width: 16rem;
+      height: 4rem;
+
+    }
   }
 `;
 const StyledPage = styled.div`

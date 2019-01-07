@@ -2,14 +2,19 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const BackgroundImage = styled.div`
-  background-image: url('../static/images/module-2-bg.jpg');
+  background-image: url("../static/images/module-2-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  min-height: 100vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 80px 0;
   flex-direction: column;
+  @media (min-width: 769px) {
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0;
+  }
 `;
 const Inner = styled.div`
   display: block;
@@ -38,13 +43,17 @@ const StatItem = styled.div`
   }
 `;
 
-const H1 = styled.h1`
+const H2 = styled.h2`
   color: ${props => props.theme.colors.white};
   margin-bottom: 60px;
+  margin-top: 0;
   text-align: center;
   padding: 0 20px;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   @media(min-width: 768px) {
-
+    font-size: 3.2rem;
+    line-height: 4.2rem;
   }
 `;
 const Subtext = styled.p`
@@ -54,7 +63,7 @@ const Subtext = styled.p`
 class StatBlock extends Component {
   render() {
     return <BackgroundImage>
-          <H1>Send beautifully crafted messages to your community </H1>
+          <H2>Send beautifully crafted messages to your community </H2>
         <Inner>
           <StatItem>
             <svg className="icon icon-megaphone">

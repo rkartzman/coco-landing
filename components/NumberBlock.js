@@ -7,7 +7,7 @@ const BackgroundImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
-  padding: 20px;
+  padding: 50px 20px 60px 20px;
   @media(min-width: 768px) {
     padding: 150px;
     display: flex;
@@ -42,6 +42,10 @@ const Number = styled.div`
 
 const Copy = styled.div`
   margin-top: 30px;
+  text-align: center;
+  @media(min-width: 376px) {
+    text-align: left;
+  }
   @media(min-width: 768px) {
     padding-left: 75px;
     margin-top: 0;

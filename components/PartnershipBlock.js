@@ -8,14 +8,34 @@ const BackgroundImage = styled.div`
   display: flex;
   min-height: 100vh;
   align-items: center;
+  background-position: 64% 0%;
 `;
 const Inner = styled.div`
     display: block;
     padding: 80px 20px;
     /* flex: none; */
+    position: relative;
+    overflow: hidden;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 400px;
+      background-image: url('../static/images/wave-background.svg');
+      width: 100%;
+      background-size: cover;
+      background-position: 100%;
+      background-repeat: no-repeat;
+      
+    }
   @media(min-width: 768px) {
     display: flex;
     flex-direction: row;
+    &:after {
+      background-position: center;
+    }
   }
 `;
 const Button = styled.a`
@@ -29,33 +49,74 @@ const Button = styled.a`
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  @media(min-width: 769px) {
+    &:hover {
+      &:after {
+        transform: scale3d(9, 9, 1);
+      }
+    }
+  }
+  @media(min-width: 769px) {
+    &:after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin: -15px 0 0 1px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: ${props => props.theme.colors.white};
+      transform-origin: 100% 50%;
+      transform: scale3d(1, 2, 1);
+      transition: transform 0.3s, opacity 0.3s;
+      transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+
+    }
+  }
 `;
 const Left = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  z-index: 1;
+  display: block;
+  text-align: center;
+  @media (min-width: 769px) {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
   h2 {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
     letter-spacing: 0.2px;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 30px;
+    @media (min-width: 769px) {
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+    }
   }
   span {
     font-size: 1.6rem;
   }
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     padding-left: 120px;
     flex: 1 0 50%;
-
   }
-  
 `;
 const Right = styled.div`
   text-align: center;
   margin-top: 30px;
+  position: relative;
+  top: 60px;
   @media (min-width: 768px) {
+    top: 220px;
     flex: 1 0 50%;
     margin-top: 0px;
   }
@@ -107,7 +168,7 @@ class PartnershipBlock extends React.Component {
               </Button>}
           </Left>
           <Right>
-            <img src="../static/images/Phone-3.png" />
+            <img src="../static/images/iphone-mockup.png" />
           </Right>
         </Inner>
       </BackgroundImage>;

@@ -13,9 +13,15 @@ const Bar = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 120px;
   align-items: center;
   background: ${props => props.theme.colors.orange};
+  height: 60px;
+  a {
+    display: flex;
+  }
+  @media(min-width: 768px) {
+    height: 120px;
+  }
 `;
 const Header = () => (
   <div>

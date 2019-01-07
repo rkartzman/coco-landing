@@ -9,8 +9,11 @@ const QuoteWrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  line-height: 320px;
+  line-height: 280px;
   overflow: hidden;
+  @media(min-width: 376px) {
+    line-height: 320px;
+  }
 `;
 const Letters = styled.h6`
   font-size: 32px;
@@ -21,8 +24,8 @@ const Letters = styled.h6`
   }
 `;
 const Quote = styled.h3`
-  font-size: 3.2rem;
-  line-height: 42px;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
   letter-spacing: 0.2px;
   color: ${props => props.theme.colors.black};
   margin: 0;
@@ -31,11 +34,12 @@ const Quote = styled.h3`
   position: absolute;
   font-weight: bold;
   padding: 0 20px;
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     max-width: 60%;
     margin: 0 auto;
     position: relative;
-
+    font-size: 3.2rem;
+    line-height: 42px;
   }
 `;
 const QuoteBlock = () => (

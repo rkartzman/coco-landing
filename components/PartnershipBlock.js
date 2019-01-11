@@ -163,7 +163,7 @@ class PartnershipBlock extends React.Component {
             </h2>
             {this.state.isMobileDevice ? <Button href="sms:12014507319">
                 Get in Touch
-              </Button> : <Button href="mailto:remykartzman@gmail.com">
+              </Button> : <Button href="mailto:hello@cocochat.co">
                 Get in Touch
               </Button>}
           </Left>

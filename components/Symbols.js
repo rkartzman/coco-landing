@@ -24,7 +24,7 @@ const Symbols = () => (
       <symbol id="icon-chat" viewBox="0 0 32 32">
         <title>Chat</title>
         <path fill="none" stroke="#8ff6e4" strokeLinejoin="round" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="1.6" d="M16 5.796c-6.18 0-11.191 4.192-11.191 9.364 0.051 2.669 1.304 5.036 3.239 6.587l0.017 0.013s-0.386 3.506-1.948 4.442c0 0 4.662-0.382 6.133-2.221h-0.003c1.118 0.344 2.403 0.542 3.735 0.542 0.006 0 0.012 0 0.018 0h-0.001c6.18 0 11.191-4.193 11.191-9.364s-5.011-9.364-11.191-9.364z"></path>
-        <path fill="none" stroke="#8ff6e4" stroke-linejoin="round" strokeLinecap="round"strokeMiterlimit="4" strokeWidth="1.6" d="M23.652 13.405c-0.85-2.285-3.118-4.046-5.945-4.559"></path>
+        <path fill="none" stroke="#8ff6e4" strokeLinejoin="round" strokeLinecap="round"strokeMiterlimit="4" strokeWidth="1.6" d="M23.652 13.405c-0.85-2.285-3.118-4.046-5.945-4.559"></path>
       </symbol>
       <symbol id="icon-transaction" viewBox="0 0 32 32">
         <title>transaction</title>
@@ -32,6 +32,11 @@ const Symbols = () => (
         <path fill="none" stroke="#8ff6e4" strokeLinejoin="round" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="1.6" d="M13.811 13.973h4.378v11.52h-4.378v-11.52z"></path>
         <path fill="none" stroke="#8ff6e4" strokeLinejoin="round" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="1.6" d="M22.205 6.507h4.378v18.987h-4.378v-18.987z"></path>
         <path fill="#8ff6e4"  d="M8.219 13.707v1.030h-1.083v-1.054c-0.935-0.122-1.771-0.475-2.47-0.999l0.014 0.010 0.813-1.186c0.472 0.394 1.042 0.687 1.668 0.838l0.028 0.006v-1.653c-1.499-0.406-2.24-0.988-2.24-2.216 0-1.156 0.875-1.916 2.187-2.051v-0.605h1.083v0.625c0.735 0.104 1.391 0.377 1.949 0.779l-0.013-0.009-0.698 1.217c-0.37-0.262-0.799-0.471-1.26-0.606l-0.030-0.008v1.571c1.582 0.427 2.259 1.083 2.259 2.249 0.001 1.157-0.884 1.915-2.206 2.064zM7.188 7.733c-0.499 0.073-0.718 0.323-0.718 0.656 0 0.323 0.146 0.542 0.718 0.749zM8.167 10.95v1.458c0.49-0.073 0.739-0.302 0.739-0.677 0.001-0.358-0.177-0.577-0.739-0.786z"></path>
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 32 32">
+        <title>close1</title>
+        <path strokeLinejoin="miter" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="4.5714" d="M3.070 3.070l25.86 25.86"></path>
+        <path strokeLinejoin="miter" strokeLinecap="butt" strokeMiterlimit="4" strokeWidth="4.5714" d="M28.93 3.070l-25.86 25.86"></path>
       </symbol>
     </defs>
   </SVG>

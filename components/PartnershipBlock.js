@@ -38,7 +38,7 @@ const Inner = styled.div`
     }
   }
 `;
-const Button = styled.a`
+export const Button = styled.a`
   background: ${props => props.theme.colors.orange};
   color: ${props => props.theme.colors.black};
   font-size: 1.1rem;
@@ -154,18 +154,16 @@ class PartnershipBlock extends React.Component {
     return <BackgroundImage>
         <Inner>
           <Left>
-            <span>Coco - Where artists text their fans.</span>
-            
+            <span>Message Your Fans With Color</span>
+
             <h2>
-              We've partnered with Open Message to upgrade texting for
-              creators. Go from black & white, to colored HTML images that
-              invoke emotion & grab attention.
+              Go from plain text, to colorful HTML messages. Our custom SMS
+              campaign builder allows you to design messages that evoke
+              emotion and grab attention. Get in touch run your own
+              campaign.
             </h2>
-            {this.state.isMobileDevice ? <Button href="sms:12014507319">
-                Get in Touch
-              </Button> : <Button href="mailto:hello@cocochat.co">
-                Get in Touch
-              </Button>}
+
+            <Button onClick={this.props.handler}>Get in Touch</Button>
           </Left>
           <Right>
             <img src="../static/images/iphone-mockup.png" />

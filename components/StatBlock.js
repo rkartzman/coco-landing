@@ -63,7 +63,7 @@ const Subtext = styled.p`
 class StatBlock extends Component {
   render() {
     return <BackgroundImage>
-          <H2>Send beautifully crafted messages to your community </H2>
+          <H2>Run the right campaign for you</H2>
         <Inner>
           <StatItem>
             <svg className="icon icon-megaphone">

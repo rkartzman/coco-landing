@@ -30,8 +30,6 @@ const Quote = styled.h3`
   color: ${props => props.theme.colors.black};
   margin: 0;
   z-index: 1;
-  text-align: center;
-  position: absolute;
   font-weight: bold;
   padding: 0 20px;
   @media (min-width: 768px) {
@@ -42,13 +40,26 @@ const Quote = styled.h3`
     line-height: 42px;
   }
 `;
+const TextWrapper = styled.div`
+  position: absolute;
+  text-align: center;
+  line-height: normal;
+
+`
 const QuoteBlock = () => (
   <QuoteWrapper>
     <Letters>98%</Letters>
-    <Quote>
-      The most important piece of data is a phone number. Cut through the noise
-      and send a message with color, to the inbox that's never ignored.
-    </Quote>
+    <TextWrapper>
+
+      <span>Why SMS?</span>
+      <Quote>
+        The most important piece of data is a phone number. We’ve partnered with
+        Open Message to help you cut through the noise and send beautifully
+        crafted messages, to the inbox that's never ignored. Open Message open
+        rate: 98%
+      </Quote>
+
+    </TextWrapper>
   </QuoteWrapper>
 );
 

@@ -63,7 +63,7 @@ const Copy = styled.div`
   }
 `;
 
-const PrimaryLabel = styled.label`
+export const PrimaryLabel = styled.label`
   text-transform: uppercase;
   font-size: 1.1rem;
   line-height: 1.8rem;
@@ -83,8 +83,8 @@ class NumberBlock extends React.Component {
         <Copy>
           <label>Song of the week</label>
           <p>
-            Text us, cause we're starting a weekly playlist and it'll be
-            cool we promise
+            Text us, cause we're starting a weekly playlist. It'll be
+            cool, we promise
           </p>
         </Copy>
       </BackgroundImage>;

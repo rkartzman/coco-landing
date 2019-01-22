@@ -130,8 +130,8 @@ class EmailModal extends React.Component {
             
           </span>
           <div className="modal-inner">
-            <form name="contact" method="POST" data-netlify="true">
-              
+            <form name="contact" method="POST" data-netlify="true" action="/">
+              <input type="hidden" name="form-name" value="contact" />
               <InputWrapper>
                 <Label>
                   Your Email: 

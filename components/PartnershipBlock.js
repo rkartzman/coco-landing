@@ -157,13 +157,12 @@ class PartnershipBlock extends React.Component {
             <span>Message Your Fans With Color</span>
 
             <h2>
-              Go from plain text, to colorful HTML messages. Our custom SMS
-              campaign builder allows you to design messages that evoke
-              emotion and grab attention. Get in touch run your own
-              campaign.
+              Go from plain text, to colorful HTML messages. Coco allows you
+              to design interactive, picture like messages that grab
+              attention. Get in touch run your own campaign.
             </h2>
 
-            <Button onClick={this.props.handler}>Get in Touch</Button>
+            <Button onClick={this.props.handler}>Email Us</Button>
           </Left>
           <Right>
             <img src="../static/images/iphone-mockup.png" />

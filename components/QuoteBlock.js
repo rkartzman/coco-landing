@@ -20,7 +20,7 @@ const Letters = styled.h6`
   color: #ffa949;
   transform: scale(17) translate3d(17%, 0, 0);
   @media (min-width: 768px) {
-    transform: scale(17) translate3d(38%, 0, 0);
+    transform: scale(17) translate3d(0%, 0, 0);
   }
 `;
 const Quote = styled.h3`
@@ -45,20 +45,23 @@ const TextWrapper = styled.div`
   text-align: center;
   line-height: normal;
 
-`
+`;
+
+const Label = styled.span`
+  padding-bottom: 10px;
+  display: block;
+  color: ${props => props.theme.colors.black};
+`;
 const QuoteBlock = () => (
   <QuoteWrapper>
     <Letters>98%</Letters>
     <TextWrapper>
-
-      <span>Why SMS?</span>
+      <Label>Why SMS?</Label>
       <Quote>
-        The most important piece of data is a phone number. We’ve partnered with
-        Open Message to help you cut through the noise and send beautifully
-        crafted messages, to the inbox that's never ignored. Open Message open
-        rate: 98%
+        The most important piece of data is a phone number. Cut through the
+        noise by sending beautifully crafted messages, to the inbox that's never
+        ignored.
       </Quote>
-
     </TextWrapper>
   </QuoteWrapper>
 );

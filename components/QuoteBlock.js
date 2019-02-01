@@ -60,7 +60,7 @@ const QuoteBlock = () => (
       <Quote>
         The most important piece of data is a phone number. Cut through the
         noise by sending beautifully crafted messages, to the inbox that's never
-        ignored.
+        ignored. Coco open rate 98%. 
       </Quote>
     </TextWrapper>
   </QuoteWrapper>

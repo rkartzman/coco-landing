@@ -159,7 +159,7 @@ class PartnershipBlock extends React.Component {
             <h2>
               Go from plain text, to colorful HTML messages. Coco allows you
               to design interactive, picture like messages that grab
-              attention. Get in touch run your own campaign.
+              attention. Get in touch to run your own campaign.
             </h2>
 
             <Button onClick={this.props.handler}>Email Us</Button>
